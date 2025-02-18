@@ -110,6 +110,9 @@ export default function ReferralBenefits() {
          
         </div>
       </div>
+      <div className="flex justify-end px-6">
+        <button className="px-6 py-2 rounded-lg border">Show More</button>
+      </div>
       <div className="mt-4 flex justify-center">
       <Button variant="contained" style={{ textTransform: "capitalize" }}>Refer Now</Button>
           </div>

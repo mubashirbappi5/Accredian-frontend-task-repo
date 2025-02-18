@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 const faqs = [
   {
@@ -31,16 +32,20 @@ export default function FAQSection() {
   const [openQuestion, setOpenQuestion] = useState(null);
 
   return (
-    <div className="flex space-x-6 p-6 max-w-3xl mx-auto">
+   <div className="my-10 container px-6 mx-auto">
+    <h2 className="text-2xl font-semibold text-center">
+          Frequently Asked <span className="text-blue-600">Questions</span>
+        </h2>
+     <div className="flex space-x-6 p-6  mx-auto">
       {/* Sidebar */}
       <div className="flex flex-col space-y-2">
         {faqs.map((item) => (
           <button
             key={item.category}
-            className={`px-4 py-2 border rounded-md text-left font-medium transition ${
+            className={`px-4 py-2 border border-[#737373] rounded-md text-left font-medium transition ${
               activeCategory === item.category
-                ? "bg-blue-100 text-blue-600"
-                : "bg-gray-100 text-gray-600"
+                ? " text-blue-600  bg-white shadow-xl shadow-[#0000002E] border border-[#E2E8F0]"
+                : "bg-gray-100 text-[#737373]"
             }`}
             onClick={() => setActiveCategory(item.category)}
           >
@@ -51,22 +56,20 @@ export default function FAQSection() {
 
       {/* FAQ Content */}
       <div className="w-full">
-        <h2 className="text-2xl font-semibold">
-          Frequently Asked <span className="text-blue-600">Questions</span>
-        </h2>
+        
         <div className="mt-4 space-y-4">
           {faqs
             .find((item) => item.category === activeCategory)
             ?.questions.map((q, index) => (
-              <div key={index} className="border-b pb-2">
+              <div key={index} className=" pb-2">
                 <button
-                  className="text-blue-600 font-medium w-full text-left flex justify-between items-center"
+                  className={` ${openQuestion === index ? 'text-blue-500' : ''} font-medium w-full text-left flex justify-between items-center`}
                   onClick={() =>
                     setOpenQuestion(openQuestion === index ? null : index)
                   }
                 >
                   {q.question}
-                  <span>{openQuestion === index ? "▲" : "▼"}</span>
+                  <span>{openQuestion === index ? <IoIosArrowUp /> : <IoIosArrowDown />}</span>
                 </button>
                 {openQuestion === index && (
                   <p className="text-gray-700 mt-2">{q.answer}</p>
@@ -76,5 +79,6 @@ export default function FAQSection() {
         </div>
       </div>
     </div>
+   </div>
   );
 }

@@ -1,5 +1,5 @@
 import Banner from "../Component/Banner";
-import FAQSection from "../Component/Faqs";
+import FAQSection from "../Component/FAQSection";
 import Header from "../Component/Header";
 import Navbar from "../Component/Navber";
 import Refer from "../Component/Refer";
