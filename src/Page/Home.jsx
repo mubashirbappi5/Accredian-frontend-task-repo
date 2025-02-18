@@ -5,6 +5,7 @@ import Navbar from "../Component/Navber";
 import Refer from "../Component/Refer";
 import ReferralBenefits from "../Component/ReferralBenefits";
 import SubBar from "../Component/SubBar";
+import Support from "../Component/Support";
 
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
             <Refer/>
             <ReferralBenefits/>
         <FAQSection/>
+        <Support/>
         </div>
     );
 };
