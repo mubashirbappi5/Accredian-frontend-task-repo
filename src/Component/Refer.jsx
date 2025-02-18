@@ -8,9 +8,17 @@ const Refer = () => {
         <h3 className="text-xl font-semibold">How Do I <span className="text-blue-500">Refer?</span></h3>
 
 
-     <div className="relative border-2">
+     <div className="relative ">
      <img className="relative" src={img1} alt="" />
-     <div className="text-center absolute flex flex-col justify-center items-center top-0 "> 
+     <div className="text-center absolute flex flex-col justify-center items-center top-[200px] left-[230px] "> 
+        <img src={img2} alt="" />
+        <p>Submit referrals easily via <br /> our website’s referral <br /> section.</p>
+     </div>
+     <div className="text-center absolute flex flex-col justify-center items-center top-[200px] left-[670px] "> 
+        <img src={img2} alt="" />
+        <p>Submit referrals easily via <br /> our website’s referral <br /> section.</p>
+     </div>
+     <div className="text-center absolute flex flex-col justify-center items-center top-[200px] right-[230px] "> 
         <img src={img2} alt="" />
         <p>Submit referrals easily via <br /> our website’s referral <br /> section.</p>
      </div>
