@@ -1,7 +1,9 @@
 import Banner from "../Component/Banner";
+import FAQSection from "../Component/Faqs";
 import Header from "../Component/Header";
 import Navbar from "../Component/Navber";
 import Refer from "../Component/Refer";
+import ReferralBenefits from "../Component/ReferralBenefits";
 import SubBar from "../Component/SubBar";
 
 
@@ -13,6 +15,8 @@ const Home = () => {
             <SubBar/>
             <Banner/>
             <Refer/>
+            <ReferralBenefits/>
+        <FAQSection/>
         </div>
     );
 };
