@@ -74,7 +74,7 @@ export default function ReferralBenefits() {
       <h3>Enrolled</h3>
      
       </div>
-      <div className="flex   p-6 space-x-6">
+      <div className="lg:flex   p-6 space-x-6">
         <Sidebar />
         <div className="flex-1">
         <div className="bg-white rounded-xl  shadow-xl">

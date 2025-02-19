@@ -62,11 +62,10 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="lg:hidden flex flex-col items-center w-full py-4 bg-gray-800">
+          <div className="lg:hidden flex flex-col items-center w-full py-4 bg-blue-100">
             {links}
             <div className="mt-4 flex flex-col gap-2">
-              <button className="bg-white text-black px-4 py-2 rounded-md w-full">Login</button>
-              <button className="bg-blue-600 text-white px-4 py-2 rounded-md w-full">Sign Up</button>
+              
             </div>
           </div>
         )}

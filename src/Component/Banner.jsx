@@ -3,6 +3,7 @@ import money from "../assets/Anniversary (8) 1.png";
 import bannerImg1 from "../assets/Anniversary (7) 1.png";
 import axios from "axios";
 import { useForm } from "react-hook-form";
+import toast from "react-hot-toast";
 
 
 const Banner = () => {
@@ -15,10 +16,11 @@ const Banner = () => {
         "http://localhost:5000/api/referral",
         data
       );
-      alert("Referral submitted successfully!");
+      toast.success("Referral submitted successfully!");
       document.getElementById("my_modal_5").close();
     } catch (error) {
-      alert("Failed to submit referral.");
+      toast.error("Failed to submit referral.");
+      document.getElementById("my_modal_5").close();
     }
   };
   
