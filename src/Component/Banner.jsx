@@ -43,7 +43,7 @@ const Banner = () => {
           <img className="z-10 md:relative md:flex hidden" src={bannerImg1} alt="" />
         </div>
 
-        <img className="absolute left-[770px] z-20 top-[430px]" src={money} alt="" />
+        <img className="absolute lg:flex hidden left-[770px] z-20 top-[430px]" src={money} alt="" />
         <img className="absolute left-0 rotate-180 md:w-40 w-20 -top-5" src={money} alt="" />
         <img className="absolute   right-[450px] bottom-[50px] md:bottom-40 md:right-0 w-20 md:w-40 rotate-180 " src={money} alt="" />
         <img className="absolute  right-0 top-0 -rotate-90 w-20 " src={money} alt="" />
