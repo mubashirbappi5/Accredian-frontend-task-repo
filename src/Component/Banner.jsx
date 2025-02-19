@@ -24,9 +24,9 @@ const Banner = () => {
   
   return (
     <div className="container   px-6 py-0  mx-auto my-10">
-      <div className="grid relative z-10 bg-[#EEF5FF] grid-cols-2 py-0 px-5 rounded-3xl shadow-2xl items-center">
-        <div className="space-y-4">
-          <h1 className="text-7xl font-bold mb-10">
+      <div className="md:grid relative z-10 bg-[#EEF5FF] grid-cols-2 py-0 px-5 rounded-3xl shadow-2xl items-center">
+        <div className="space-y-4 md:block flex flex-col justify-center items-center py-5">
+          <h1 className="text-7xl  font-bold mb-10">
             Let’s Learn <br /> & Earn
           </h1>
           <h3 className="text-4xl mb-6 ">
@@ -40,17 +40,16 @@ const Banner = () => {
        
         </div>
         <div>
-          <img className="z-10 relative" src={bannerImg1} alt="" />
+          <img className="z-10 md:relative md:flex hidden" src={bannerImg1} alt="" />
         </div>
 
         <img className="absolute left-[770px] z-20 top-[430px]" src={money} alt="" />
-        <img className="absolute left-0 rotate-180 -top-5" src={money} alt="" />
-        <img className="absolute  right-0 rotate-180 " src={money} alt="" />
+        <img className="absolute left-0 rotate-180 md:w-40 w-20 -top-5" src={money} alt="" />
+        <img className="absolute   right-[450px] bottom-[50px] md:bottom-40 md:right-0 w-20 md:w-40 rotate-180 " src={money} alt="" />
         <img className="absolute  right-0 top-0 -rotate-90 w-20 " src={money} alt="" />
-        <img className="absolute  right-[415px] top-0 -rotate-90  " src={money} alt="" />
+        <img className="absolute  md:right-[415px] md:top-0 right-0 bottom-6 -rotate-90 w-20 md:w-40  " src={money} alt="" />
       </div>
-
-
+ 
       {/* modal */}
       
 
