@@ -11,16 +11,16 @@ const Support = () => {
             <h2 className="text-white font-semibold">
               Want to delve deeper into the program?
             </h2>
-            <p className="text-white">
+            <p className="text-white relative z-20">
               Share your details to receive expert insights from our program
               team!
             </p>
           </div>
         </div>
         <div className="relative z-10">
-          <Button variant="contained" style={{ textTransform: "capitalize" }}>
-            Try for free
-          </Button>
+          <button className="bg-white px-4 py-2 rounded-lg font-semibold text-[#3B82F6]" >
+          Get in touch
+          </button>
         </div>
         <img className="absolute w-[500px] right-0 bottom-0" src={bg1} alt="" />
       </div>
