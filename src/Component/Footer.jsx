@@ -1,6 +1,19 @@
+import { FaFacebookSquare, FaInstagramSquare, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
+import { TiSocialYoutube } from "react-icons/ti";
+import logo from '../assets/accredainnew.webp.png'
+import supportbtn from '../assets/Link.png'
 export default function Footer() {
     return (
-      <footer className="bg-[#282828] text-white py-10 px-6 md:px-20">
+      <footer className="bg-[#282828] text-white py-10 px-6 md:px-20 relative">
+        <div className="flex justify-between items-center border-b-2 border-gray-600 pb-6 mb-6">
+          <div>
+<img src={logo} alt="" />
+          </div>
+          <div>
+           <button className="px-10 py-2 bg-blue-500 rounded-xl border border-white">Schedule 1-on-1 Call Now</button>
+           <h5 className="text-white">Speak with our Learning Advisor</h5>
+          </div>
+        </div>
         <div className="grid md:grid-cols-3 gap-8">
           {/* Programs Section */}
           <div>
@@ -33,11 +46,11 @@ export default function Footer() {
             <p className="text-gray-400">Office Address: 4th Floor, 250, Phase IV, Udyog Vihar, Sector 18, Gurugram, Haryana 122015</p>
             <h2 className="text-lg font-semibold mt-4">Follow Us</h2>
             <div className="flex space-x-3 mt-2">
-              <span className="cursor-pointer">🔵</span>
-              <span className="cursor-pointer">🔗</span>
-              <span className="cursor-pointer">🐦</span>
-              <span className="cursor-pointer">📸</span>
-              <span className="cursor-pointer">▶️</span>
+              <span className="cursor-pointer"><FaFacebookSquare /></span>
+              <span className="cursor-pointer"><FaLinkedin /></span>
+              <span className="cursor-pointer"><FaTwitterSquare/></span>
+              <span className="cursor-pointer"><FaInstagramSquare /></span>
+              <span className="cursor-pointer"><TiSocialYoutube /></span>
             </div>
           </div>
   
@@ -65,6 +78,7 @@ export default function Footer() {
         <div className="text-center text-gray-500 text-sm mt-8 border-t border-gray-700 pt-4">
           © 2024 Accredian A Brand of FullStack Education Pvt Ltd. All Rights Reserved
         </div>
+        <img className="absolute bottom-20 right-10" src={supportbtn} alt="" />
       </footer>
     );
   }
